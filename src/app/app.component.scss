@@ -1,0 +1,167 @@
+a {
+  text-decoration: none;
+}
+
+.text {
+  font-family: "PT Root UI";
+  font-weight: 700;
+  font-size: 30px;
+}
+
+h1 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 110%;
+  letter-spacing: 0.01em;
+  color: var(--black-color);
+}
+
+.plan-item {
+  border: 2px solid #d3d6dd;
+  border-radius: 20px;
+  background: white;
+  &.primary {
+    background: rgba(#01b9c5, 0.05);
+    border-color: #01b9c5;
+  }
+
+  .plan-name {
+    font-family: "Bebas Neue";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 100%;
+    color: #687078;
+  }
+
+  .plan-name-forever {
+    font-family: "Bebas Neue";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 100%;
+    color: var(--black-color);
+  }
+
+  .plan-price {
+    font-family: "PT Root UI";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 110%;
+    letter-spacing: -2px;
+    color: var(--black-color);
+  }
+
+  .plan-sale {
+    font-family: "PT Root UI";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 110%;
+    color: #95979f;
+    text-decoration: line-through;
+  }
+
+  .plan-text {
+    font-family: "PT Root UI";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    color: #2f4353;
+  }
+
+  .plan-star {
+    width: 70px;
+    height: 70px;
+    background: url(/assets/star.svg) center center no-repeat;
+  }
+
+  .plan-star-text {
+    font-family: "PT Root UI";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    color: #ffffff;
+  }
+}
+
+.btn {
+  color: white;
+  background: #fd4d35;
+  align-items: center;
+  padding: 28px 100px;
+  border-radius: 60px;
+
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  border: none;
+
+  &,
+  &:focus,
+  &:focus-visible,
+  &:hover {
+    color: #ffffff;
+  }
+}
+
+.plan-description {
+  font-family: "PT Root UI";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130%;
+  color: var(--black-color);
+}
+
+.private-policy {
+  font-family: "PT Root UI";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 110%;
+  color: #818798;
+}
+
+.low {
+  font-family: "PT Root UI";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  color: #818798;
+}
+
+.checkbox-control {
+  padding-left: 35px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    background: #01b9c5;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &.active::before {
+    background-image: url(/assets/checkbox-active.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}

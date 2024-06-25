@@ -1,0 +1,44 @@
+:host {
+  --number-color: #01b9c5;
+}
+
+.number {
+  font-family: "Bebas Neue";
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 55px;
+  color: var(--number-color);
+}
+
+.small {
+  font-family: "PT Root UI";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 14px;
+  color: var(--small-color);
+}
+
+.eclipse {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  opacity: 0.5;
+  background: var(--number-color);
+}
+
+.time-danger {
+  animation: color 0.6s linear infinite;
+}
+
+@keyframes color {
+  0% {
+    --number-color: #01b9c5;
+  }
+  100% {
+    --number-color: #fd4d35;
+  }
+}
+
+.time-end {
+  --number-color: #fd4d35;
+}

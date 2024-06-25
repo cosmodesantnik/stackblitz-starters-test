@@ -1,0 +1,87 @@
+<div
+  class="modal fade d-flex align-items-center"
+  [class.show]="show"
+  tabindex="-1"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="px-4 mx-3 pb-4 mb-3">
+        <div class="last-offer">горящее предложение</div>
+
+        <div (click)="onClose()" class="modal-close"></div>
+
+        <div class="text-center">
+          <h2 class="mt-4">
+            Не упусти свой
+            <span class="text-primary">последний шанс</span>
+          </h2>
+
+          <div class="text mt-4">
+            Мы знаем, как трудно начать..
+            <span class="weight-700">Поэтому!</span>
+          </div>
+
+          <div class="text text-border d-inline-block mt-2 weight-700">
+            Дарим скидку для
+            <span class="text-primary">лёгкого старта 🏃‍♂️</span>
+          </div>
+        </div>
+
+        <div class="mx-auto mt-4">
+          <div class="text">Посмотри, что мы для тебя приготовили 🔥</div>
+
+          <div class="d-flex gap-3 mt-3">
+            <ng-container *ngFor="let item of plans; let index = index">
+              <div class="col">
+                <ng-container
+                  *ngTemplateOutlet="
+                    planRef;
+                    context: { item: item, index: index }
+                  "
+                ></ng-container>
+              </div>
+            </ng-container>
+          </div>
+
+          <footer class="text-center mt-4 pt-3">
+            <button class="btn">Начать тренироваться</button>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ng-template #planRef let-item="item" let-index="index">
+  <div
+    (click)="selectdeIndex = index"
+    [class.selected]="selectdeIndex === index"
+    class="plan-item p-4 position-relative"
+  >
+    <div class="p-1d">
+      <div class="d-flex">
+        <div class="plan-name flex-fill">{{ item.name }}</div>
+
+        <div class="plan-checkbox"></div>
+      </div>
+
+      <div class="mt-3 d-inline-flex flex-column">
+        <div class="plan-sale text-end">
+          {{ item.price | saleFormat : sales[index] }}₽
+        </div>
+      </div>
+
+      <hr class="my-2" />
+
+      <div class="d-flex align-items-end">
+        <div class="plan-price">{{ item.price }}₽</div>
+
+        <div
+          class="plan-star d-flex justify-content-center align-items-center ms-1 mb-3"
+        >
+          <span class="plan-star-text">{{ sales[index] }}%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-template>

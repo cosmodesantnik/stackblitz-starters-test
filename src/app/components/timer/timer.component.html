@@ -1,0 +1,22 @@
+<div
+  class="d-flex ps-3 ms-2"
+  [class.time-end]="timeStop$ | async"
+  [class.time-danger]="timeDanger$ | async"
+>
+  <div class="col-auto">
+    <div class="number">{{ time$ | async | minuiteFormat }}</div>
+
+    <div class="small">минут</div>
+  </div>
+
+  <div class="col-auto mt-2">
+    <div class="eclipse m-2"></div>
+    <div class="eclipse m-2"></div>
+  </div>
+
+  <div class="col-auto">
+    <div class="number">{{ time$ | async | secondFormat }}</div>
+
+    <div class="small">секунд</div>
+  </div>
+</div>
