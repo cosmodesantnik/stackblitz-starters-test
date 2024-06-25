@@ -21,9 +21,12 @@ h1 {
   border: 2px solid #d3d6dd;
   border-radius: 20px;
   background: white;
-  &.primary {
+  cursor: pointer;
+
+  &.selected {
     background: rgba(var(--primary-color), 0.05);
     border-color: var(--primary-color);
+    cursor: default;
   }
 
   .plan-name {

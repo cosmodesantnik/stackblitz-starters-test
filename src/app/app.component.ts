@@ -24,6 +24,7 @@ import { SalePipe } from './pipes/sale.pipe';
 export class AppComponent {
   private cdr = inject(ChangeDetectorRef);
   private http = inject(HttpClient);
+  protected selectdeIndex = 0;
   protected sales = [30, 40, 50, 70];
   protected salesText = [
     'Чтобы просто <br/> начать 👍🏻',

@@ -66,14 +66,16 @@
 </section>
 
 <ng-template #planRef let-item="item" let-index="index">
-  <div class="plan-item p-4 position-relative" [class.primary]="!index">
+  <div
+    class="plan-item p-4 position-relative"
+    [class.selected]="selectdeIndex === index"
+    (click)="selectdeIndex = index"
+  >
     <div
       *ngIf="!(timeStop$ | async)"
       class="plan-star position-absolute top-0 end-0 translate-middle-y d-flex justify-content-center align-items-center me-1 mt-1"
     >
-      <span class="plan-star-text"
-        >{{ sales[index] }}%</span
-      >
+      <span class="plan-star-text">{{ sales[index] }}%</span>
     </div>
 
     <div class="p-1">
@@ -96,14 +98,16 @@
 </ng-template>
 
 <ng-template #foreverRef let-item="item" let-index="index">
-  <div class="plan-item p-4 position-relative" [class.primary]="!index">
+  <div
+    class="plan-item p-4 position-relative"
+    [class.selected]="selectdeIndex === index"
+    (click)="selectdeIndex = index"
+  >
     <div
       *ngIf="!(timeStop$ | async)"
       class="plan-star position-absolute top-0 end-0 translate-middle-y d-flex justify-content-center align-items-center me-1 mt-1"
     >
-      <span class="plan-star-text"
-        >{{ sales[index] }}%</span
-      >
+      <span class="plan-star-text">{{ sales[index] }}%</span>
     </div>
 
     <div class="d-flex p-1">
@@ -114,7 +118,7 @@
           <div class="plan-price">{{ item.price }}₽</div>
 
           <div class="plan-sale text-end">
-          {{ item.price | saleFormat : sales[index] }}₽
+            {{ item.price | saleFormat : sales[index] }}₽
           </div>
         </div>
       </div>
@@ -127,4 +131,7 @@
   </div>
 </ng-template>
 
-<app-dialog [show]="$any(timeStop$ | async)" [plans]="$any(plansDialog$ | async)"></app-dialog>
+<app-dialog
+  [show]="$any(timeStop$ | async)"
+  [plans]="$any(plansDialog$ | async)"
+></app-dialog>
