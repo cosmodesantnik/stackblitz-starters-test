@@ -32,10 +32,9 @@
 }
 
 .text {
-  font-family: "PT Root UI";
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
+  font-size: var(--font-size-24);
   line-height: 130%;
 }
 
@@ -54,7 +53,7 @@ h2 {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
+  font-size: var(--font-size-30-modal);
   line-height: 130%;
   text-transform: uppercase;
 }
@@ -69,7 +68,7 @@ h2 {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: var(--font-size-20);
   line-height: 20px;
   border: none;
 
@@ -100,24 +99,22 @@ h2 {
     font-family: "Bebas Neue";
     font-style: normal;
     font-weight: 600;
-    font-size: 38px;
+    font-size: var(--font-size-38);
     line-height: 100%;
   }
 
   .plan-price {
-    font-family: "PT Root UI";
     font-style: normal;
     font-weight: 700;
-    font-size: 46px;
+    font-size: var(--font-size-46);
     line-height: 110%;
     letter-spacing: -2px;
   }
 
   .plan-sale {
-    font-family: "PT Root UI";
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
+    font-size: var(--font-size-20);
     line-height: 110%;
     color: #95979f;
 
@@ -135,10 +132,9 @@ h2 {
   }
 
   .plan-text {
-    font-family: "PT Root UI";
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: var(--font-size-16);
     line-height: 130%;
     color: #2f4353;
   }
@@ -148,15 +144,17 @@ h2 {
     height: 50px;
     background: url(/assets/star.svg) center center no-repeat;
     background-size: cover;
-  }
-
-  .plan-star-text {
-    font-family: "PT Root UI";
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 130%;
     color: #ffffff;
+  }
+
+  .plan-star-mobile {
+    width: 40px;
+    height: 40px;
+    font-size: 10px;
   }
 
   .plan-checkbox {

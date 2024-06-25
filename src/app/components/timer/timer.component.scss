@@ -5,15 +5,14 @@
 .number {
   font-family: "Bebas Neue";
   font-weight: 700;
-  font-size: 60px;
-  line-height: 55px;
+  font-size: var(--font-size-60);
+  line-height: 45px;
   color: var(--number-color);
 }
 
 .small {
-  font-family: "PT Root UI";
   font-weight: 700;
-  font-size: 16px;
+  font-size: var(--font-size-16);
   line-height: 14px;
   color: #818798;
 }

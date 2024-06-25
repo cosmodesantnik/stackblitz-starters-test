@@ -3,16 +3,15 @@ a {
 }
 
 .text {
-  font-family: "PT Root UI";
   font-weight: 700;
-  font-size: 30px;
+  font-size: var(--font-size-30);
 }
 
 h1 {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
+  font-size: var(--font-size-40);
   line-height: 110%;
   letter-spacing: 0.01em;
 }
@@ -33,7 +32,7 @@ h1 {
     font-family: "Bebas Neue";
     font-style: normal;
     font-weight: 600;
-    font-size: 30px;
+    font-size: var(--font-size-30);
     line-height: 100%;
     color: #687078;
   }
@@ -42,34 +41,32 @@ h1 {
     font-family: "Bebas Neue";
     font-style: normal;
     font-weight: 600;
-    font-size: 38px;
+    font-size: var(--font-size-38);
     line-height: 100%;
+    color: var(--black-color);
   }
 
   .plan-price {
-    font-family: "PT Root UI";
     font-style: normal;
     font-weight: 700;
-    font-size: 50px;
+    font-size: var(--font-size-50);
     line-height: 110%;
     letter-spacing: -2px;
   }
 
   .plan-sale {
-    font-family: "PT Root UI";
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
+    font-size: var(--font-size-24);
     line-height: 110%;
     color: #95979f;
     text-decoration: line-through;
   }
 
   .plan-text {
-    font-family: "PT Root UI";
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: var(--font-size-16);
     line-height: 130%;
     color: #2f4353;
   }
@@ -78,13 +75,21 @@ h1 {
     width: 70px;
     height: 70px;
     background: url(/assets/star.svg) center center no-repeat;
-  }
-
-  .plan-star-text {
-    font-family: "PT Root UI";
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
+    line-height: 130%;
+    color: #ffffff;
+  }
+
+  .plan-star-mobile {
+    width: 50px;
+    height: 50px;
+    background: url(/assets/star.svg) center center no-repeat;
+    background-size: cover;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
     line-height: 130%;
     color: #ffffff;
   }
@@ -100,7 +105,7 @@ h1 {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: var(--font-size-20);
   line-height: 20px;
   text-transform: uppercase;
   border: none;
@@ -114,7 +119,6 @@ h1 {
 }
 
 .plan-description {
-  font-family: "PT Root UI";
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -122,16 +126,14 @@ h1 {
 }
 
 .private-policy {
-  font-family: "PT Root UI";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: var(--font-size-16);
   line-height: 110%;
   color: #818798;
 }
 
 .low {
-  font-family: "PT Root UI";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
