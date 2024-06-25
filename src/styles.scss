@@ -5,8 +5,9 @@
 @import url("https://fonts.cdnfonts.com/css/rubik");
 
 body {
-  color: #12191D;
   background: #f5f7f7;
-  --small-color: #818798;
   --black-color: #2d3242;
+  --primary-color: #01b9c5;
+  --red-color: #fd4d35;
+  color: var(--black-color);
 }

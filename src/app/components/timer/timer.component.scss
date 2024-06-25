@@ -1,5 +1,5 @@
 :host {
-  --number-color: #01b9c5;
+  --number-color: var(--primary-color);
 }
 
 .number {
@@ -15,7 +15,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 14px;
-  color: var(--small-color);
+  color: #818798;
 }
 
 .eclipse {
@@ -32,13 +32,13 @@
 
 @keyframes color {
   0% {
-    --number-color: #01b9c5;
+    --number-color: var(--primary-color);
   }
   100% {
-    --number-color: #fd4d35;
+    --number-color: var(--red-color);
   }
 }
 
 .time-end {
-  --number-color: #fd4d35;
+  --number-color: var(--red-color);
 }

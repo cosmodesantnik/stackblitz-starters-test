@@ -1,9 +1,13 @@
 .modal {
   height: 100vh;
   background-color: rgba(#000, 0.4);
+  z-index: -1;
   --bs-modal-width: 750px;
   --bs-modal-border-radius: 0;
   --bs-modal-border-width: 0;
+  &.show {
+    z-index: auto;
+  }
 }
 
 .modal-close {
@@ -17,11 +21,11 @@
 }
 
 .text-primary {
-  color: #01b9c5 !important;
+  color: var(--primary-color) !important;
 }
 
 .last-offer {
-  background: #01b9c5;
+  background: var(--primary-color);
   color: white;
   display: inline-block;
   padding: 4px 10px;
@@ -37,7 +41,7 @@
 
 .text-border {
   padding: 12px 28px 16px 30px;
-  border: 1.5px solid #01b9c5;
+  border: 1.5px solid var(--primary-color);
   border-radius: 30px;
   display: inline-block;
 }
@@ -57,7 +61,7 @@ h2 {
 
 .btn {
   color: white;
-  background: #fd4d35;
+  background: var(--red-color);
   align-items: center;
   padding: 20px 40px;
   border-radius: 60px;
@@ -98,7 +102,6 @@ h2 {
     font-weight: 600;
     font-size: 38px;
     line-height: 100%;
-    color: var(--black-color);
   }
 
   .plan-price {
@@ -108,7 +111,6 @@ h2 {
     font-size: 46px;
     line-height: 110%;
     letter-spacing: -2px;
-    color: var(--black-color);
   }
 
   .plan-sale {
@@ -166,12 +168,12 @@ h2 {
 
   &.selected {
     background: rgba(#01b9c5, 0.05);
-    border-color: #01b9c5;
+    border-color: var(--primary-color);
     cursor: default;
 
     .plan-checkbox {
       position: relative;
-      border-color: #01b9c5;
+      border-color: var(--primary-color);
 
       &::before {
         content: "";
@@ -182,7 +184,7 @@ h2 {
         transform: translate(-50%, -50%);
         width: 11px;
         height: 11px;
-        background: #01b9c5;
+        background: var(--primary-color);
         border-radius: 50%;
       }
     }
@@ -190,5 +192,5 @@ h2 {
 }
 
 hr {
-  border-color: #E7EAF1;
+  border-color: #e7eaf1;
 }

@@ -43,8 +43,8 @@
 
     <div class="private-policy mt-4">
       <label
-        class="checkbox-control active"
-        (click)="$any($event.target).classList.toggle('active')"
+        class="checkbox-control check"
+        (click)="$any($event.target).classList.toggle('check')"
         >Я соглашаюсь с
         <a href="#" (click)="$event.stopPropagation()">Правилами сервиса</a> и
         условиями
@@ -69,7 +69,7 @@
   <div class="plan-item p-4 position-relative" [class.primary]="!index">
     <div
       *ngIf="!(timeStop$ | async)"
-      class="plan-star position-absolute top-0 end-0 translate-middle-y d-flex justify-content-center align-items-center"
+      class="plan-star position-absolute top-0 end-0 translate-middle-y d-flex justify-content-center align-items-center me-1 mt-1"
     >
       <span class="plan-star-text"
         >{{ sales[index] }}%</span
@@ -99,7 +99,7 @@
   <div class="plan-item p-4 position-relative" [class.primary]="!index">
     <div
       *ngIf="!(timeStop$ | async)"
-      class="plan-star position-absolute top-0 end-0 translate-middle-y d-flex justify-content-center align-items-center"
+      class="plan-star position-absolute top-0 end-0 translate-middle-y d-flex justify-content-center align-items-center me-1 mt-1"
     >
       <span class="plan-star-text"
         >{{ sales[index] }}%</span

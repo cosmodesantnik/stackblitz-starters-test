@@ -20,8 +20,8 @@ import {
   timer,
 } from 'rxjs';
 
-import { MinutePipe } from './minute.pipe';
-import { SecondsPipe } from './seconds.pipe';
+import { MinutePipe } from '../../pipes/minute.pipe';
+import { SecondsPipe } from '../../pipes/seconds.pipe';
 
 @Component({
   selector: 'app-timer',
