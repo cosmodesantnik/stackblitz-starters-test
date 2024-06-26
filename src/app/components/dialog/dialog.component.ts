@@ -8,7 +8,7 @@ import {
   Output,
   inject,
 } from '@angular/core';
-import { IPlan } from '../../models/plan';
+import { IPlan } from '../../model/plan';
 import { SalePipe } from '../../pipes/sale.pipe';
 
 @Component({

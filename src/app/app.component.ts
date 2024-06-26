@@ -8,7 +8,7 @@ import {
 import { BehaviorSubject, map, combineLatest, shareReplay, Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 
-import { IPlan } from './models/plan';
+import { IPlan } from './model/plan';
 import { TimerComponent } from './components/timer/timer.component';
 import { DialogComponent } from './components/dialog/dialog.component';
 import { SalePipe } from './pipes/sale.pipe';
@@ -30,7 +30,7 @@ export class AppComponent {
     'Чтобы просто <br/> начать 👍🏻',
     'Привести тело <br/> впорядок 💪🏻',
     'Изменить <br/> образ жизни 🔥',
-    'Всегда быть <br  class="d-md-none d-block"/> в форме <span class="d-none d-md-block">и поддерживать своё <br/> здоровье</span> ⭐️',
+    'Всегда быть <br  class="d-md-none d-inline"/> в форме <span class="d-none d-md-inline">и поддерживать своё <br/> здоровье</span> ⭐️',
   ];
   protected timeStop$ = new BehaviorSubject<boolean>(false);
   protected plans$ = this.http
