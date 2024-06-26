@@ -12,9 +12,11 @@ body {
   font-family: "PT Root UI";
 
   --font-size-16: 14px;
+  --font-size-18: 14px;
   --font-size-20: 20px;
   --font-size-24: 15px;
-  --font-size-30: 16px;
+  --font-size-30-text: 16px;
+  --font-size-30: 24px;
   --font-size-38: 24px;
   --font-size-40: 24px;
   --font-size-46: 44px;
@@ -28,8 +30,10 @@ body {
 
   @include media-breakpoint-up(md) {
     --font-size-16: 16px;
+    --font-size-18: 18px;
     --font-size-20: 20px;
     --font-size-24: 24px;
+    --font-size-30-text: 30px;
     --font-size-30: 30px;
     --font-size-38: 38px;
     --font-size-40: 40px;
