@@ -66,15 +66,17 @@
       >
     </div>
 
-    <button class="btn mt-5 d-block d-md-none w-100">Купить</button>
-    <button class="btn mt-5 d-md-block d-none">Купить</button>
+    <footer class="mt-5 mb-3">
+      <button class="btn mb-4 d-block d-md-none w-100">Купить</button>
+      <button class="btn mb-4 d-md-block d-none">Купить</button>
 
-    <div class="low mt-4 pt-3">
-      Нажимая «Купить», Пользователь соглашается на автоматическое списание
-      денежных средств по истечению купленного периода. Дальнейшие списания по
-      тарифам участвующим в акции осуществляются по полной стоимости согласно
-      оферте.
-    </div>
+      <div class="low d-none d-md-block">
+        Нажимая «Купить», Пользователь соглашается на автоматическое списание
+        денежных средств по истечению купленного периода. Дальнейшие списания по
+        тарифам участвующим в акции осуществляются по полной стоимости согласно
+        оферте.
+      </div>
+    </footer>
   </section>
 </section>
 
@@ -136,10 +138,7 @@
         </div>
       </div>
 
-      <div
-        class="col plan-text px-2 mt-3"
-        [innerHTML]="salesText[index]"
-      ></div>
+      <div class="col plan-text px-2 mt-3" [innerHTML]="salesText[index]"></div>
     </div>
   </div>
 </ng-template>
